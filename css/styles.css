@@ -35,13 +35,20 @@ h1, h2, h3, p, ul {
     margin-bottom: 0;
 }
 
+
 .container {
   
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px;  
+}
+
+@media (min-width:480px) {
+    .container {
+        width: 428px;
+    }
     
 }
 
@@ -83,6 +90,13 @@ h1, h2, h3, p, ul {
     display: inline-block;
    
     margin-bottom: 16px;
+}
+
+@media (min-width:480px) {
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .web {
@@ -217,6 +231,14 @@ h1, h2, h3, p, ul {
     background-position: center;
     }
 
+    @media (min-width:480px) {
+        .hero {
+            min-width: 428px;
+            height: 432px;
+        }
+        
+    }
+
 .hero-title {
     color: var(--white);
     font-weight: 700;
@@ -231,6 +253,18 @@ h1, h2, h3, p, ul {
     margin-bottom: 48px;
 
     padding-top: 188px;
+}
+
+@media (min-width:480px) {
+    .hero-title {
+        width: 319px;
+        font-size: 36px;
+        line-height: 1.11;
+        padding-top: 112px;
+        margin-bottom: 72px;
+        padding-left: auto;
+        padding-right: auto;
+    }
 }
 
 .hero-btn {
@@ -283,6 +317,7 @@ h1, h2, h3, p, ul {
     width: 408px;
      
     background-color: #FCFCFC;
+    
 
 }
 
@@ -523,14 +558,41 @@ h1, h2, h3, p, ul {
     padding-bottom: 120px;
 }
 
+@media (min-width:480px) {
+    .features {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+}
 
 .feature-list {
     display: flex;
 }
 
+@media (min-width:480px) {
+    .feature-list {
+        display: block;
+    }
+}
+
+
+
 .feature-list .item {
-    width: 264px;
-    
+    width: 264px;   
+}
+
+@media (min-width:480px) {
+    .feature-list .item {
+        width: 396px;
+        /* margin-bottom: 76px; */
+    }
+}
+
+@media (min-width:480px) {
+    .feature-list .item:not(:last-child) {
+        /* width: 396px; */
+        margin-bottom: 76px;
+    }
 }
 
 .thumb {
@@ -539,9 +601,13 @@ h1, h2, h3, p, ul {
     display: flex;
     justify-content: center;
     border-radius: 4px;
-    margin-bottom: 8px;
-    
-    
+    margin-bottom: 8px;  
+}
+
+@media (min-width:480px) {
+    .thumb {
+        display: none;
+    }
 }
 
 .feature-icon {
@@ -550,9 +616,20 @@ h1, h2, h3, p, ul {
    align-self: center;
    
 }
+@media (min-width:480px) {
+    .feature-icon {
+        display: none;
+    }
+}
 
 .feature-list .item:not(:last-child) {
     margin-right: 24px;
+}
+
+@media (min-width:480px) {
+    .feature-list .item:not(:last-child) {
+        margin-right: 0px;
+    }
 }
 
 .features-title {
@@ -567,11 +644,31 @@ h1, h2, h3, p, ul {
     display: none;
 }
 
+@media (min-width:480px) {
+    .title.feature-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+    }
+}
+
+@media (min-width:480px) {
+    .text.feature-text {
+        text-align: start;
+    }
+}
+
 /*Work*/
 
 .work-content {
     padding-top: 0;
     padding-bottom: 120px; 
+}
+@media (min-width:480px) {
+    .work-content {
+        display: none;
+    }
 }
 
 .work-list {
@@ -618,8 +715,23 @@ h1, h2, h3, p, ul {
     padding-bottom: 120px;
 }
 
+@media (min-width:480px) {
+    .team {
+        padding-bottom: 128px;
+        padding-top: 96px;
+    }
+}
+
 .team-list {
     display: flex;
+}
+
+@media (min-width:480px) {
+    .team-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .team-element {
@@ -627,6 +739,15 @@ h1, h2, h3, p, ul {
     margin-right: 24px;
 
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    max-width: 264px;
+}
+
+@media (min-width:480px) {
+    .team-element:not(:last-child) {
+        margin-bottom: 72px;  
+        margin-right: 0;  
+    }
+    
 }
 
 .team-element:last-child {
@@ -648,6 +769,12 @@ img {
     text-align: center;
 
     border-radius: 0px 0px 4px 4px;
+}
+
+@media (min-width:480px) {
+    .title.team-member {
+        font-weight: 500;
+    }
 }
 
 .sm-links-list {
@@ -701,6 +828,13 @@ img {
     padding-top: 130px;
 }
 
+@media (min-width:480px) {
+    .customers {
+        padding-top: 96px; 
+        padding-bottom: 96px;
+    }
+}
+
 .customers-list {
     list-style: none;
 
@@ -712,9 +846,24 @@ img {
     margin: 0;   
 }
 
+@media (min-width:480px) {
+    .customers-list {
+        flex-wrap: wrap;
+        column-gap: 16px;
+        row-gap: 72px;
+    }
+}
+
 .customer-link {
     width: 168px;
     height: 88px;
+}
+
+@media (min-width:480px) {
+    .customer-link {
+        width: 190px;
+
+    }
 }
 
 .client-logo {
@@ -753,6 +902,13 @@ img {
     display: flex;
 }
 
+@media (min-width:480px) {
+    .footer .container {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+}
+
 .footer {
     background-color: var(--dark);
     padding-top: 100px;
@@ -764,9 +920,23 @@ img {
     margin-right: 120px;
 }
 
+@media (min-width:480px) {
+    .footer-content {
+            margin:auto;
+            margin-bottom: 72px;
+        }
+}
+
 .text.footer-text {
     color: var(--accent); 
     width: 264px; 
+}
+
+@media (min-width:480px) {
+    .text.footer-text {
+            text-align: left;
+        }
+    
 }
 
 .footer-thumb {
@@ -782,6 +952,15 @@ img {
     letter-spacing: 0.02em;
 
     color: #FFFFFF;
+}
+
+@media (min-width:480px) {
+    .footer-thumb {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 72px;
+    }
 }
 
 .footer.sm-links-list {
@@ -813,6 +992,14 @@ img {
 
 }
 
+@media (min-width:480px) {
+    .subscribe {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .subscribe-field {
     
     display: flex;
@@ -829,6 +1016,12 @@ img {
     color: var(--white);
 }
 
+@media (min-width:480px) {
+    .subscribe-field label {
+        text-align: center;
+    }
+}
+
 .subscribe-field input {
     padding: 8px 16px;
     width: 264px;
@@ -839,6 +1032,13 @@ img {
     border-radius: 4px;
     background: inherit;
     color: rgba(255, 255, 255, 0.6);
+}
+
+@media (min-width:480px) {
+    .subscribe-field input {
+        width: auto;
+        margin-bottom: 16px;
+    }
 }
 
 .submit-btn {  
@@ -862,8 +1062,14 @@ img {
     border-radius: 4px;
     border: transparent;
 
-    cursor: pointer;
-    
+    cursor: pointer;   
+}
+
+@media (min-width:480px) {
+    .submit-btn {
+        align-self: center;
+        margin-bottom: 96px;
+    }
 }
 
 .submit-btn:hover,
