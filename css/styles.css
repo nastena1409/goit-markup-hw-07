@@ -1148,8 +1148,11 @@ img {
 /*Портфоліо*/
 
 .portfolio {
-    padding-top: 96px;
-    padding-bottom: 120px;
+    /* padding-top: 96px;
+    padding-bottom: 120px; */
+
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .portfolio-title {
@@ -1158,16 +1161,18 @@ img {
 
 .buttons-list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 72px;
+    flex-wrap: wrap;
+    gap: 24px;
+    /* justify-content: center;
+    margin-bottom: 72px; */
     
 }
 
 .btn-element {
-    margin-right: 24px;
+    /* margin-right: 24px; */
 }
 .btn-element:last-child {
-    margin-right: 0;
+    /* margin-right: 0; */
 }
 
 .filter-btn {
@@ -1201,7 +1206,9 @@ img {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-
+.projects {
+    padding-top: 48px;
+}
 
 .project-list {
     display: flex;
@@ -1210,8 +1217,10 @@ img {
 }
 
 .project-link {
-    margin-right: 24px;
-    margin-bottom: 48px;
+    /* margin-right: 24px; */
+    margin-right: auto;
+    margin-left: auto;
+    /* margin-bottom: 48px; */
     text-decoration: none;
 
     cursor: pointer;
@@ -1219,6 +1228,10 @@ img {
     box-shadow: none;
 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-link:not(:last-child) {
+    margin-bottom: 48px;
 }
 
 .project-link:hover,
