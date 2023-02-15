@@ -46,12 +46,12 @@ h1, h2, h3, p, ul {
     padding-right: 15px;  
 }
 
-/* @media (min-width:768px) {
+@media screen and (min-width:768px) {
     .container {
         max-width: 768px;
     }
     
-} */
+}
 
 .header {
     border-bottom: 1px solid #E7E9FC;
@@ -131,6 +131,12 @@ h1, h2, h3, p, ul {
     margin-left: 76px;
 }
 
+@media screen and (min-width:768px) {
+    .site-nav {
+        margin-left: 120px;
+    }
+}
+
 .site-nav .item:not(:last-child) {
     margin-right: 40px;
 }
@@ -142,7 +148,7 @@ h1, h2, h3, p, ul {
 
     color: var(--dark);
 
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
 
@@ -184,8 +190,21 @@ h1, h2, h3, p, ul {
     display: flex;
 }
 
+@media screen and (min-width:768px) {
+    .contacts {
+        flex-direction: column;
+        
+    }
+}
+
 .contacts .item:not(:last-child) {
     margin-right: 40px;
+}
+
+@media screen and (min-width:768px) {
+    .contacts .item:not(:last-child) {
+            margin-right: 0px;
+        }
 }
 
 .contact-link {
@@ -584,11 +603,14 @@ h1, h2, h3, p, ul {
     display: block;
 }
 
-/* @media (min-width:480px) {
+@media screen and (min-width:768px) {
     .feature-list {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
     }
-} */
+}
 
 
 
@@ -596,10 +618,22 @@ h1, h2, h3, p, ul {
     /* width: 264px;    */
     max-width: 396px;
 }
+
+@media screen and (min-width:768px) {
+    .feature-list .item {
+        width: calc(100% / 2 - 24px);
+    }
+}
  
 .feature-list .item:not(:last-child) {
     margin-bottom: 76px;
     max-width: 396px;
+}
+
+@media screen and (min-width:768px) {
+    .feature-list .item:not(:last-child) {
+            margin-bottom: 0px;
+    }
 }
 
 /* @media (min-width:480px) {
@@ -656,7 +690,7 @@ h1, h2, h3, p, ul {
 .features-title {
     color: var(--dark);
 
-    font-weight: 600;
+    font-weight: 500;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -738,6 +772,12 @@ h1, h2, h3, p, ul {
     padding-bottom: 120px; */
 }
 
+@media  screen and (min-width:768px) {
+    .team {
+        padding-bottom: 104px;
+    }
+}
+
 /* @media (min-width:480px) {
     .team {
         padding-bottom: 128px;
@@ -749,6 +789,17 @@ h1, h2, h3, p, ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media screen and (min-width:768px) {
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 24px;
+        row-gap: 64px;
+
+    }
 }
 
 /* @media (min-width:480px) {
@@ -769,6 +820,12 @@ h1, h2, h3, p, ul {
 
 .team-element:not(:last-child) {
         margin-bottom: 72px;  
+}
+
+@media screen and (min-width:768px) {
+    .team-element:not(:last-child) {
+            margin-bottom: 0px;
+        }
 }
 
 /* @media (min-width:480px) {
@@ -885,6 +942,14 @@ img {
     margin: 0;   
 }
 
+@media screen and (min-width: 768px) {
+    .customers-list {
+        flex-basis: calc(100% / 3 - 48px);
+        padding-left: 93px;
+        padding-right: 93px;
+    }
+}
+
 /* @media (min-width:480px) {
     .customers-list {
         flex-wrap: wrap;
@@ -943,6 +1008,15 @@ img {
     justify-content: center;
 }
 
+@media screen and (min-width:768px) {
+    .footer-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 93px;
+        padding-right: 93px;
+    }
+}
+
 /* @media (min-width:480px) {
     .footer .container {
             flex-wrap: wrap;
@@ -957,10 +1031,22 @@ img {
 }
 
 .footer-content {
-    display: block;
+    display: flex;
     /* margin-right: 120px; */
-    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 72px;
+    width: 264px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-content {
+        align-items: start;
+        margin-left: 0;
+        margin-right: 24px;
+    }
 }
 
 /* @media (min-width:480px) {
@@ -972,7 +1058,6 @@ img {
 
 .text.footer-text {
     color: var(--accent); 
-    min-width: 268px; 
 }
 
 /* @media (min-width:480px) {
@@ -1028,18 +1113,37 @@ img {
     background-color: var(--success);
 }
 
-.subscribe {
+.subscribe-field {
     
     display: flex;
-    /* flex-direction: row; */
+}
+@media screen and (min-width: 768px) {
+    .subscribe-field {
+        text-align: start;
+        margin-left: 0px;
+        margin-right: 0;
+    }
+}
+
+.subscribe {
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
+    text-align: center;
     width: 453px;
-    height: 80px;
+    height: 136px;
     /* margin-left: 80px; */
 
+}
+
+@media screen and (min-width: 768px) {
+    .subscribe {
+        flex-direction: row;
+        text-align: start;
+        
+        
+    }
 }
 
 /* @media (min-width:480px) {
@@ -1050,14 +1154,9 @@ img {
     }
 } */
 
-.subscribe-field {
-    
-    display: flex;
-    flex-direction: column;
-}
 
 .subscribe-field label {
-    margin-bottom: 16px;
+    
 
     font-weight: 500;
     font-size: 16px;
@@ -1065,8 +1164,14 @@ img {
     letter-spacing: 0.02em;  
     color: var(--white);
     text-align: center;
+    
 }
 
+@media (min-width:768px) {
+    .subscribe-field label {
+        margin-right: 24px;
+}
+}
 /* @media (min-width:480px) {
     .subscribe-field label {
         text-align: center;
@@ -1075,10 +1180,11 @@ img {
 
 .subscribe-field input {
     padding: 8px 16px;
-    width: auto;
+    width: 100%;
     /* width: 264px; */
     height: 40px;
     margin-bottom: 16px;
+    margin-top: 16px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1087,24 +1193,20 @@ img {
     color: rgba(255, 255, 255, 0.6);
 }
 
-/* @media (min-width:480px) {
+@media (min-width:768px) {
     .subscribe-field input {
-        width: auto;
-        margin-bottom: 16px;
+        width: 264px;
     }
-} */
+}
 
 .submit-btn {  
     display: flex;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     
     width: 165px;
     min-height: 40px;
-
-    margin-bottom: 96px;
-
-    align-self: center;
-    /* align-self: end; */
 
     font-weight: 500;
     font-size: 16px;
@@ -1122,7 +1224,7 @@ img {
     cursor: pointer;   
 }
 
-/* @media (min-width:480px) {
+/* @media (min-width:768px) {
     .submit-btn {
         align-self: center;
         margin-bottom: 96px;
@@ -1219,6 +1321,7 @@ img {
 }
 
 .project-link {
+    
     /* margin-right: 24px; */
     margin-right: 0;
     margin-left: 0;
