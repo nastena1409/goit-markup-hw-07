@@ -1326,9 +1326,10 @@ img {
      
 }
 
-@media screen and (min-width:768) {
+@media screen and (min-width:768px) {
     .project-list {
         row-gap: 72px;
+        justify-content: space-between;
         }
 }
 
