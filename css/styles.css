@@ -689,7 +689,7 @@ h1, h2, h3, p, ul {
     margin-bottom: 8px;  
 }
 
-@media (max-width:1158px) {
+@media (max-width:1200px) {
     .thumb {
         display: none;
     }
