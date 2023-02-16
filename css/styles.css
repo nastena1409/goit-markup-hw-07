@@ -1335,6 +1335,13 @@ img {
     padding-bottom: 48px;
 }
 
+@media screen and (min-width:1200px) {
+    .portfolio {
+        padding-top: 96px;
+        padding-bottom: 120px;
+}
+}
+
 .portfolio-title {
     display: none;
 }
@@ -1344,8 +1351,14 @@ img {
     flex-wrap: wrap;
     gap: 24px;
     /* justify-content: center;
-    margin-bottom: 72px; */
-    
+    margin-bottom: 72px; */  
+}
+
+@media screen and (min-width:1200px) {
+    .buttons-list {
+            justify-content: center;
+            margin-bottom: 72px;
+        }
 }
 
 .btn-element {
@@ -1389,6 +1402,12 @@ img {
 .projects {
     padding-top: 48px;
     padding-bottom: 48px;
+}
+
+@media screen and (min-width:1200px) {
+    .projects {
+        padding: 0;
+    }
 }
 
 .project-list {
