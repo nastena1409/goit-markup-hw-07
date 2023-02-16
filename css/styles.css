@@ -1113,38 +1113,43 @@ img {
     background-color: var(--success);
 }
 
-.subscribe-field {
+.subscribe {
     
-    display: flex;
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    width: auto;
 }
 @media screen and (min-width: 768px) {
-    .subscribe-field {
-        text-align: start;
-        margin-left: 0px;
-        margin-right: 0;
+    .subscribe {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        min-width: 453px;
+        height: 80px;
     }
 }
 
 .subscribe {
-    flex-direction: column;
-    margin-left: auto;
+    /* flex-direction: column; */
+    /* margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
     text-align: center;
     width: 453px;
-    height: 136px;
+    height: 136px; */
     /* margin-left: 80px; */
 
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .subscribe {
         flex-direction: row;
         text-align: start;
         
         
     }
-}
+} */
 
 /* @media (min-width:480px) {
     .subscribe {
@@ -1153,6 +1158,14 @@ img {
         margin-right: auto;
     }
 } */
+
+@media screen and (min-width:768px) {
+    .subscribe-field {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+}
 
 
 .subscribe-field label {
@@ -1163,15 +1176,9 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;  
     color: var(--white);
-    text-align: center;
     
 }
 
-@media (min-width:768px) {
-    .subscribe-field label {
-        margin-right: 24px;
-}
-}
 /* @media (min-width:480px) {
     .subscribe-field label {
         text-align: center;
@@ -1212,7 +1219,6 @@ img {
     font-size: 16px;
     line-height: 1.5;
     align-items: center;
-    text-align: center;
     letter-spacing: 0.04em;
     
     color: var(--white);
@@ -1224,12 +1230,12 @@ img {
     cursor: pointer;   
 }
 
-/* @media (min-width:768px) {
+@media (min-width:768px) {
     .submit-btn {
-        align-self: center;
-        margin-bottom: 96px;
+        align-self: end;
+        
     }
-} */
+}
 
 .submit-btn:hover,
 .submit-btn:focus {
@@ -1316,8 +1322,14 @@ img {
 .project-list {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 48px;
-    
+    row-gap: 48px;  
+     
+}
+
+@media screen and (min-width:768) {
+    .project-list {
+        row-gap: 72px;
+        }
 }
 
 .project-link {
