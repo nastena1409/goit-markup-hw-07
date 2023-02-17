@@ -42,7 +42,101 @@
              <a class="contact-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
             </li>
           </ul>
-        </address>  
+        </address> 
+        <!--Menu Open Button-->
+              <button type="button" 
+                      class="menu-button js-open-menu"
+                      aria-expanded="false"
+                      aria-controls="mobile-menu" >
+                <svg class="button-open" width="32" height="22"
+                     aria-label="Switch-mobile-menu">
+                  <use class="icon-open" href="./images/icons.svg#icon-burger"></use>
+                </svg>
+              </button>
+              
+          <!--Menu Nav Container-->
+              <div class="menu-container js-menu-container" id="mobile-menu">
+                
+                    <button type="button" 
+                      class="menu-button js-close-menu">
+                    <svg class="button-cross" width="8" height="8">
+                      <use class="icon-cross" href="./images/icons.svg#icon-close-black-18dp-2-1-"></use>
+                    </svg>
+                </button>
+
+                <div class="mobile-navigation">
+                  <ul class="list mobile-list">
+                
+                  <li class="nav-item">
+                   <a class="nav-link" href="./index.html">Studio</a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link current" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+
+                    <a class="nav-link" href="">Contacts</a>
+                </li>
+              </ul>
+                </div>
+
+                <div class="mobile-contacts">
+                  <address>
+                      <ul class="list mobile-list">
+
+                        <li class="mobile-contact-item" >
+                          <a class="mobile-contact-link tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        </li>
+
+                        <li class="mobile-contact-item">
+                          <a class="mobile-contact-link" class="mobile-contact-link"  href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                
+                      </ul>
+                  </address> 
+                </div>
+                <div class="mobile-sm-links">
+                  <ul class="team sm-links-list">
+
+                <li class="social-links-item">
+                  <a class="social-media-link" href="">
+                    <svg class="icon" width="16px" height="16px">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="social-links-item">
+                  <a class="social-media-link" href="" >
+                    <svg class="icon" width="16px" height="16px">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="social-links-item">
+                  <a class="social-media-link" href="" >
+                    <svg class="icon" width="16px" height="16px">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="social-links-item">
+                  <a class="social-media-link" href="" >
+                    <svg class="icon" width="16px" height="16px">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li> 
+              </ul>
+                </div>
+            
+
+                
+              </div> 
       </div>
     </header>
 <main>
@@ -304,5 +398,6 @@
       </div>
       
     </footer>
+    <script src="./js/mobile-menu.js"></script>
       </body>
     </html>
