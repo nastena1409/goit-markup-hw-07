@@ -1246,8 +1246,10 @@ img {
     }
 }
 
-.subscribe {
-
+.subscribe-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media screen and (min-width:768px) {
