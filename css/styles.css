@@ -179,7 +179,9 @@ h1, h2, h3, p, ul {
 
 .menu-container.is-open {
     transform: translateX(0);
-    display: block;
+    
+    display: flex;
+    flex-direction: column;
 }
 
 .menu-container .menu-button {
@@ -205,9 +207,11 @@ h1, h2, h3, p, ul {
     list-style: none;
 }
 
+
 .mobile-navigation {
-    margin-bottom: 284px;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
     
 }
 
@@ -232,7 +236,8 @@ h1, h2, h3, p, ul {
 }
 
 .mobile-contacts {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 48px;
 }
 
@@ -260,9 +265,15 @@ h1, h2, h3, p, ul {
     color: var(--primary-brand);
 }
 
-.mobile-sm-links .team.sm-links-list {
+.mobile-sm-links {
+    display: flex;
+    flex-direction: row;
     justify-content: start;
-    gap: 56px;
+    
+}
+
+.mobile-sm-links .team.sm-links-list {
+gap: 56px;
 }
 
 /*Site nav*/
@@ -414,6 +425,8 @@ h1, h2, h3, p, ul {
 
     margin-right: auto;
     margin-left: auto;
+    padding-top: 112px;
+    padding-bottom: 112px;
     }
 
 
@@ -433,6 +446,8 @@ h1, h2, h3, p, ul {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
                     url(../images/hero-tablet.jpg);
+                    padding-top: 118px;
+                    padding-bottom: 118px;
         }
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
@@ -477,7 +492,14 @@ h1, h2, h3, p, ul {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 72px;
-    padding-top: 112px;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-title {
+        font-size: 56px;
+        max-width: 496px;
+        margin-bottom: 48px;
+    }
 }
 
 .hero-btn {
@@ -871,6 +893,18 @@ h1, h2, h3, p, ul {
         text-align: center;
     }
 
+@media screen and (min-width:768px) {
+    .title.feature-title {
+        text-align: start;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .title.feature-title {
+        font-size: 20px;
+    }
+}
+
 /*Work*/
 
 .work-content {
@@ -1075,6 +1109,7 @@ img {
         flex-basis: calc(100% / 3 - 48px);
         padding-left: 93px;
         padding-right: 93px;
+        column-gap: 24px;
     }
 }
 
@@ -1127,6 +1162,10 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.footer-wrap {
+    width: 100%;
 }
 
 @media screen and (min-width:768px) {
@@ -1274,7 +1313,7 @@ img {
 
 .subscribe-field input {
     padding: 8px 16px;
-    width: 100%
+    width: 100%;
     height: 40px;
     margin-bottom: 16px;
     margin-top: 16px;
