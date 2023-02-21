@@ -1270,7 +1270,7 @@ img {
 
 .subscribe {
     
-    display: block;
+    display: flex;
     flex-direction: column;
     text-align: center;
     width: auto;
@@ -1358,6 +1358,7 @@ img {
 @media (min-width:768px) {
     .submit-btn {
         align-self: end;
+        margin-left: 24px;
         
     }
 }
