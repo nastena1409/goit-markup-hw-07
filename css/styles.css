@@ -563,6 +563,12 @@ gap: 56px;
     border-radius: 4px;
 }
 
+@media screen and (max-width: 479px) {
+    .modal {
+        width: calc(100% - 36px);
+    }
+}
+
 @media screen and (min-width: 480px) {
     .modal {
         width: 408px;
